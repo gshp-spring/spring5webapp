@@ -46,11 +46,11 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 
         //Ricky Olo
         Author ricky = new Author("Ricky", "Olo");
-        Book pasy = new Book("Velirano", "5678", publisher);
-        ricky.getBooks().add(pasy);
-        pasy.getAuthors().add(ricky);
+        Book velirano = new Book("Velirano", "5678", publisher);
+        ricky.getBooks().add(velirano);
+        velirano.getAuthors().add(ricky);
 
         authorRepository.save(ricky);
-        bookRepository.save(pasy);
+        bookRepository.save(velirano);
     }
 }
