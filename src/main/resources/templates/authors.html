@@ -5,18 +5,18 @@
     <title>Spring Framework</title>
 </head>
 <body>
-<h1>Authors list</h1>
-<table>
-    <tr>
-        <th>Id</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-    </tr>
-    <tr th:each="author : ${authors}">
-        <td th:text="${author.id}">123</td>
-        <td th:text="${author.firstName}">Paul</td>
-        <td th:text="${author.lastName}">Bismut</td>
-    </tr>
-</table>
+    <h1>Authors list</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr th:each="author : ${authors}">
+            <td th:text="${author.id}">123</td>
+            <td th:text="${author.firstName}">Paul</td>
+            <td th:text="${author.lastName}">Bismut</td>
+        </tr>
+    </table>
 </body>
 </html>
